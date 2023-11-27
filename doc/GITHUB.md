@@ -44,7 +44,7 @@ It sounds like you might have cloned a repository from a different location and 
 You can update the remote URL using the following Git command:
 
 ```bash
-sudo git remote set-url origin https://github.com/jookie/SaaSGPT-Genius
+git remote set-url origin https://github.com/jookie/convex-chatgpt.git
 ```
 
 Replace `your-username` with your GitHub username and `your-empty-repo` with the name of your empty repository.
