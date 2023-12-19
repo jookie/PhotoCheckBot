@@ -1,9 +1,4 @@
 
-
-
-<h1 align="center">
-Title
-</h1>
 [full-stack-chatgpt-app](https://stack.convex.dev/full-stack-chatgpt-app)
 
 To create a Vite-powered React application, you'll need Node.js installed on your machine. Vite is a build tool that leverages modern JavaScript features and provides fast build times for development. Here's a step-by-step guide on how to set up a basic React app using Vite:

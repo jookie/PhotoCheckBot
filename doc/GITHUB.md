@@ -37,22 +37,4 @@ git push origin master  # Or the branch name you are pushing
 
 Make sure to replace `master` with the appropriate branch name if you're working on a different branch.
 
-If you've correctly updated the remote URL and are still experiencing issues with pushing to your new empty repository, it might be helpful to check for any Git configurations or authentication settings that could be causing conflicts. Additionally, ensure that you have the necessary permissions to push to the new repository.
 
-It sounds like you might have cloned a repository from a different location and are trying to push to the original repository URL instead of your empty repository on GitHub. If you want to push to your own empty repository, you'll need to change the remote URL to point to your repository.
-
-You can update the remote URL using the following Git command:
-
-```bash
-git remote set-url origin https://github.com/jookie/convex-chatgpt.git
-```
-
-Replace `your-username` with your GitHub username and `your-empty-repo` with the name of your empty repository.
-
-After running this command, try to push your changes again:
-
-```bash
-git push origin master  # Or the branch name you are pushing
-```
-
-This should update the remote URL for your local repository, allowing you to push changes to your own empty repository on GitHub.

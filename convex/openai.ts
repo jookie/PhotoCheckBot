@@ -1,3 +1,5 @@
+// https://github.com/ianmacartney/convex-chat-gpt/blob/main/convex/openai.ts
+
 "use node";
 import { internal } from "./_generated/api";
 import {
@@ -7,23 +9,23 @@ import {
 } from "openai";
 import { action } from "./_generated/server";
 import { v } from "convex/values";
-
-if (!process.env.OPENAI_API_KEY) {
+const apiKey = process.env.OPENAI_API_KEY!;
+if (!apiKey) {
   throw new Error(
     "Missing OPENAI_API_KEY in environment variables.\n" +
-      "Set it in the project settings in the Convex dashboard:\n" +
-      "    npx convex dashboard\n or https://dashboard.convex.dev"
+    "Set it in the project settings in the Convex dashboard:\n" +
+    "    npx convex dashboard\n or https://dashboard.convex.dev"
   );
 }
+// const configuration = new Configuration({ apiKey });
+// const openai = new OpenAIApi(configuration);
 
 export const moderateIdentity = action({
   args: { name: v.string(), instructions: v.string() },
   handler: async (ctx, { name, instructions }) => {
-    const apiKey = process.env.OPENAI_API_KEY!;
+    // Check if the message is offensive.
     const configuration = new Configuration({ apiKey });
     const openai = new OpenAIApi(configuration);
-
-    // Check if the message is offensive.
     const modResponse = await openai.createModeration({
       input: name + ": " + instructions,
     });
@@ -67,17 +69,9 @@ export const chat = action({
         .then(() => {
           throw new Error(reason);
         });
-    const apiKey = process.env.OPENAI_API_KEY;
-    if (!apiKey) {
-      await fail(
-        "Add your OPENAI_API_KEY as an env variable in the dashboard:" +
-          "https://dashboard.convex.dev"
-      );
-    }
+
     const configuration = new Configuration({ apiKey });
     const openai = new OpenAIApi(configuration);
-
-    // Check if the message is offensive.
     try {
       const modResponse = await openai.createModeration({
         input: body,
@@ -117,10 +111,15 @@ export const chat = action({
       });
       lastInstructions = instructions;
     }
+    // This will first send the messages with the send mutation we modified, getting in return the list of messages and message ID to update with the bot’s message. It will then make a request to the gpt-3.5-turbo model, passing in one system message with instructions (hard-coded for now), followed by each message. We’re turning our body & author fields into “role” and “content”. See their docs here for more details on the API.
 
+    // model="gpt-4-vision-preview",
+    // const OrganizationID = "org-oDhTiyLPDwjVt51BGoxAb50z"
+    const OPENAI_MODEL = "gpt-3.5-turbo"
+    //const OPENAI_MODEL = "gpt-4";
     try {
       const openaiResponse = await openai.createChatCompletion({
-        model: "gpt-3.5-turbo",
+        model: OPENAI_MODEL,
         messages: gptMessages,
       });
       await ctx.runMutation(internal.messages.update, {
