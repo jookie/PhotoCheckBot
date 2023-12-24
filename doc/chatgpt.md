@@ -58,3 +58,13 @@ This will generate an optimized build of your React app ready for deployment.
 - You can add additional dependencies, like UI libraries (e.g., Material-UI, Tailwind CSS), state management tools (e.g., Redux, React Context API), or any other packages your project may require.
 
 This basic setup will get you started with a Vite-powered React application. You can then begin building your app by modifying the React components, adding new features, and integrating other libraries or APIs as needed for your project.
+
+## References
+
+[Convex Chat-GPT](https://convex-chat-gpt.vercel.app/)
+[GPT Streaming With Persistent Reactivity
+](https://stack.convex.dev/gpt-streaming-with-persistent-reactivity)
+[ianmacartney
+/
+streaming-chat-gpt](https://github.com/ianmacartney/streaming-chat-gpt)
+

@@ -10,6 +10,7 @@ import {
 import { action } from "./_generated/server";
 import { v } from "convex/values";
 const apiKey = process.env.OPENAI_API_KEY!;
+const OrganizationID = process.env.OPENAI_API_ORG_ID;
 if (!apiKey) {
   throw new Error(
     "Missing OPENAI_API_KEY in environment variables.\n" +
@@ -24,7 +25,7 @@ export const moderateIdentity = action({
   args: { name: v.string(), instructions: v.string() },
   handler: async (ctx, { name, instructions }) => {
     // Check if the message is offensive.
-    const configuration = new Configuration({ apiKey });
+    const configuration = new Configuration({ apiKey:apiKey,organization:OrganizationID});
     const openai = new OpenAIApi(configuration);
     const modResponse = await openai.createModeration({
       input: name + ": " + instructions,

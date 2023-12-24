@@ -1,6 +1,7 @@
 curl https://api.openai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer $OPENAI_API_KEY" \
+  -H "Authorization: Bearer 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" \
+  -H "OpenAI-Organization: org-oDhTiyLPDwjVt51BGoxAb50z" \
   -d '{
     "model": "gpt-3.5-turbo",
     "messages": [
