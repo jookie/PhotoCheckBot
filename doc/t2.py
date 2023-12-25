@@ -3,7 +3,7 @@ import time
 from openai import OpenAI
 import os
 
-api_key = "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"
+api_key = "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"
 client = OpenAI(api_key=api_key)
 # Set the API key for the OpenAI client
 client.api_key = api_key

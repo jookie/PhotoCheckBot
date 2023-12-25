@@ -1,5 +1,8 @@
 // https://github.com/ianmacartney/convex-chat-gpt/blob/main/convex/openai.ts
 
+// https://stack.convex.dev/full-stack-chatgpt-app
+// Building a Full-Stack ChatGPT app
+
 "use node";
 import { internal } from "./_generated/api";
 import {

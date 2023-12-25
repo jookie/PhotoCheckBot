@@ -1,17 +1,23 @@
+const OpenAI = require('openai');
 
-import OpenAI from "openai";
+// Replace 'YOUR_API_KEY' with your actual API key from OpenAI
+const apiKey = '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';
 
-const openai = new OpenAI();
-openai.api_key = "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"
+// Initialize OpenAI with your API key
+const openai = new OpenAI({ apiKey });
+
 async function main() {
-  const completion = await openai.chat.completions.create({
-    messages: [{"role": "system", "content": "You are a helpful assistant."},
-        {"role": "user", "content": "Who won the world series in 2020?"},
-        {"role": "assistant", "content": "The Los Angeles Dodgers won the World Series in 2020."},
-        {"role": "user", "content": "Where was it played?"}],
-    model: "gpt-3.5-turbo",
-  });
+  try {
+    const completion = await openai.complete({
+      engine: 'text-davinci-003',
+      prompt: 'Once upon a time...',
+      max_tokens: 50,
+    });
 
-  console.log(completion.choices[0]);
+    console.log(completion.data.text);
+  } catch (error) {
+    console.error('Error:', error);
+  }
 }
+
 main();
