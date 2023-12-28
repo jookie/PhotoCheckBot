@@ -30,21 +30,45 @@ export default function HeroSection() {
       </h1>
 
       <div className="flex justify-center space-x-4">
-        <a
-          className="bg-white rounded-xl text-black font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-gray-100 border"
-          href="https://youtu.be/9TZsh_-y9DA"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Learn how it's built
-        </a>
-        <a
-          className="bg-[#4b4cb7] rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-4 hover:bg-[#4b4cb7]/80"
-          // src/caption.tsx
-          href= "caption"
-        >
-          Create a caption
-        </a>
+        <div>
+          <a
+            className="bg-white rounded-xl text-black font-medium px-4 py-3 sm:mt-10 mt-8 hover:bg-gray-100 border"
+            href="https://youtu.be/9TZsh_-y9DA"
+            target="_blank"
+            rel="noreferrer"
+          >
+            How it's built
+          </a>
+        </div>
+        <div>
+          <a
+            className="bg-[#4b4cb7] rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-4 hover:bg-[#4b4cb7]/80"
+            // src/caption.tsx
+            href="caption"
+            // target="_blank"
+          >
+            Caption
+          </a>
+        </div>
+
+        <div>
+          <a
+            className="bg-[#4b4cb7] rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-4 hover:bg-[#4b4cb7]/80"
+            // src/caption.tsx
+            href="https://github.com/jookie/captionai"
+          >
+            Description
+          </a>
+        </div>
+
+        <div>
+          <a
+            className="bg-[#4b4cb7] rounded-xl text-white font-medium px-4 py-3 sm:mt-10 mt-4 hover:bg-[#4b4cb7]/80"
+             href="https://captionai-seven.vercel.app/"
+          >
+            Production
+          </a>
+        </div>
       </div>
       <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6 text-white">
         <div className="flex flex-col space-y-10 mt-4 mb-16">
@@ -53,7 +77,7 @@ export default function HeroSection() {
               <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
               <img
                 alt="Dog and blue building"
-                src="src/war.png"
+                src="src/public/war2.jpg"
                 className="w-96 h-96 rounded-2xl"
                 width={200}
                 height={200}
