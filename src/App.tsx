@@ -24,8 +24,8 @@ export default function App() {
 
   return (
     <main>
-      <h1>Convex Chat-GPT</h1>
-      <p>Disclaimer: Any identities here are not real. Just robots.</p>
+      {/* <h1>Convex Chat-GPT</h1>
+      <p>Disclaimer: Any identities here are not real. Just robots.</p> */}
       {status === "CanLoadMore" && (
         <button onClick={() => loadMore(100)}>Load More</button>
       )}
@@ -55,7 +55,7 @@ export default function App() {
           <Thread messages={[]} threadId={newThreadId} />
         </>
       )}
-      <button
+ <button
         onClick={(e) => {
           e.preventDefault();
           createThread().then(setNewThreadId);

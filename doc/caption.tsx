@@ -9,12 +9,12 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Uploader } from "uploader";
 import { UploadDropzone } from "react-uploader";
 
-import Navbar from "./components/componentsCap/Navbar"
-import Footer from "./components/componentsCap/Footer";
-import LoadingDots from "./components/componentsCap/LoadingDots";
-import ResizablePanel from "./components/componentsCap/ResizablePanel";
+import Navbar from "../src/components/componentsCap/Navbar"
+import Footer from "../src/components/componentsCap/Footer";
+import LoadingDots from "../src/components/componentsCap/LoadingDots";
+import ResizablePanel from "../src/components/componentsCap/ResizablePanel";
 
-import NSFWPredictor from "./utilsCap/nsfwCheck";
+import NSFWPredictor from "../src/utilsCap/nsfwCheck";
 import va from "@vercel/analytics";
 
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
