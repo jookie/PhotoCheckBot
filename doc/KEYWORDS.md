@@ -1,7 +1,7 @@
 
 [caption api](https://github.com/hqasmei/captionAI/blob/main/pages/api/generate.ts)
 
-[web-crawl-q-and-a-example](https://github.com/hqasmei/captionAI/blob/main/pages/api/generate.ts)
+[web-crawl-q-and-a-example]()
 
 [14 Most Frequently Asked Questions about Web Scraping](https://www.octoparse.com/blog/15-most-frequently-asked-questions-of-web-scraping)
 
