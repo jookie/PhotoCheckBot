@@ -18,12 +18,13 @@ export default function HeroSection() {
   return (
 
     <main >
-      <h1 >
-        Video Media Dome images
-        {/* <p >
-          Take your images to the next level with custom captions.
-        </p> */}
-      </h1>
+      <img
+        alt="Israeli Soldier on and a building"
+        src="src/img/banner/factChecking.png"
+        className="w-96 h-96 rounded-2xl"
+        width={1000}
+        height={200}
+      />
 
       <div >
 
@@ -31,7 +32,7 @@ export default function HeroSection() {
           <button
             onClick={() => {
               window.location.href = "https://captionai-seven.vercel.app/";
-              }
+            }
             } >
             Scan Social Media on line in real time
           </button>
@@ -60,9 +61,9 @@ export default function HeroSection() {
               {/* <h2 className="mb-1 font-medium text-lg">Original Photo</h2> */}
               <img
                 alt="Israeli Soldier on and a building"
-                src="src/public/war2.jpg"
+                src="src/img/banner/azaMarchSouth.png"
                 className="w-96 h-96 rounded-2xl"
-                width={200}
+                width={500}
                 height={200}
               />
             </div>
