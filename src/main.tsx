@@ -5,6 +5,7 @@ import App from "./App.tsx";
 import "./index.css";
 import "./styles/globals.css"
 import "./index2.css"
+import "./styles/globals2.css"
 import { ConvexProvider, ConvexReactClient } from "convex/react";
 import HeroSection from "./components/componentsCap/HeroSection.tsx"
 
