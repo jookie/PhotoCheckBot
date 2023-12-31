@@ -27,6 +27,4 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       {/* </ChakraProvider> */}
     </ConvexProvider>
   </React.StrictMode>
-
-
 );
