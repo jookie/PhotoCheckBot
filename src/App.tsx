@@ -55,7 +55,7 @@ export default function App() {
           <Thread messages={[]} threadId={newThreadId} />
         </>
       )}
- <button
+      <button className="x-4 py-2 text-white bg-[#5a5cd1] rounded-md hover:bg-[#3f4194] focus:outline-none focus:ring"
         onClick={(e) => {
           e.preventDefault();
           createThread().then(setNewThreadId);
