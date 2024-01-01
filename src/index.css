@@ -16,7 +16,7 @@ main {
   padding-bottom: 1em;
   padding-left: 2em; /* Left padding */
   padding-right: 2em; /* Right padding */
-  /* width: min(800px, 95vw); */
+  /* width: min(1000px, 95vw);  */
   margin: 0 auto;
 }
 
