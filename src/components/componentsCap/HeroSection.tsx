@@ -19,7 +19,7 @@ export default function HeroSection() {
         className="flex flex-col items-center justify-center text-center sm:mt-2 mt-20 flex-1 px-4 w-full"
       >
         {/* banner start*/}
-        <div className="flex flex-wrap w-2/3 md:w-1/4 p-2">
+        <div className="flex flex-wrap w-full md:w-1/4 p-2">
           <div className="w-2/3 md:w-1/4 p-2">
             <img
               alt="banner_left"
