@@ -1,5 +1,6 @@
 // import Link from "next/link";
 // import Image from "next/image";
+import Stackedlist from "./../Playground/Stackedlist"
 import { useState } from "react";
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
 export default function HeroSection() {
@@ -18,6 +19,7 @@ export default function HeroSection() {
       <div
         className="flex flex-col items-center justify-center text-center sm:mt-2 mt-20 flex-1 px-4 w-full"
       >
+        <Stackedlist></Stackedlist>
         {/* banner start*/}
         <div className="flex flex-wrap w-full md:w-1/4 p-2">
           <div className="w-2/3 md:w-1/4 p-2">
