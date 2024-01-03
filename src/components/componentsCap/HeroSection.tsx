@@ -1,23 +1,30 @@
 // import Link from "next/link";
 // import Image from "next/image";
-import Stackedlist from "./../Playground/Stackedlist"
+
+// https://tailwindui.com/components#pricing
+
+//https://github.com/webdevcody/convex-replicate/tree/main 
+
+// Create Animated card slider with Tailwind CSS and Swiper | React.js
+
+// https://gist.github.com/Mif2006/b6963b16274c973b7ddfacf3106bb114
+import Stackedlist from "../sliders/Stackedlist"
 import { useState } from "react";
-import { HiOutlineClipboardDocument } from "react-icons/hi2";
-export default function HeroSection() {
+import { HiOutlineClipboardDocument } from "react-icons/hi2";                                                                  export default function HeroSection() {
   const [buttonText, setButtonText] = useState("Copy");
   const copyToClipboard = (caption: string) => {
     navigator.clipboard.writeText(caption!);
 
-    setButtonText("Copied!"); // set the button text to "Copied!" when text is copied
+    setButtonText("Copied!"); // set the button text to "Copied!"  when text is copied
     setTimeout(() => {
-      setButtonText("Copy"); // set the button text back to "Copy" after 2 seconds
+      setButtonText("Copy"); // set the button text back to "Copy"    after 2 seconds
     }, 2000);
   };
   return (
     <main
     >
       <div
-        className="flex flex-col items-center justify-center text-center sm:mt-2 mt-20 flex-1 px-4 w-full"
+        className="flex flex-col items-center justify-center text-center sm:mt-2 mt-1 flex-1 px-5 w-full"
       >
         <Stackedlist></Stackedlist>
         {/* banner start*/}

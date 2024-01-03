@@ -14,6 +14,7 @@ import HeroSection from "./components/componentsCap/HeroSection.tsx"
 // import Navbar from "./components/componentsCap/Navbar.tsx"
 import Footer from "./components/componentsCap/Footer.tsx"
 
+
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <ConvexProvider client={convex}>
       {/* <ChakraProvider> */}
       {/* <Navbar /> */}
+      {/* <ActiveSlider/> */}
       <HeroSection />
       <App />
       <Footer />
