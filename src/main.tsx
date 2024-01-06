@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       {/* <ActiveSlider/> */}
       <HeroSection />
       <App />
-      <Footer />
+      {/* <Footer /> */}
       {/* </ChakraProvider> */}
     </ConvexProvider>
   </React.StrictMode>

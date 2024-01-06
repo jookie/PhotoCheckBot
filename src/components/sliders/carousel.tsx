@@ -1,4 +1,4 @@
-
+// https://ayyaztech.github.io/create-carousel-slider-in-Tailwind-css-and-React-js/
 
 
 

@@ -1,8 +1,10 @@
-import { people } from "../sliders/constants/card";
 
+// gist.github.com/Mif2006
+import { people } from "./constants/people";
 export default function StackedList() {
   return (
     //   flex flex-wrap gap-x-16 divide-x divide-gray-100
+    
     <div className="flex">
       {people.map((person) => (
         <div key={person.email} className="">
@@ -13,9 +15,8 @@ export default function StackedList() {
               rel="noopener noreferrer"
             >
               <img
-                className="h-10 w-19 flex-none bg-red-"
+                className="h-100 w-190 flex-none bg-red-"
                 src={person.imageUrl}
-                alt=""
               />
             </a>
           </div>
