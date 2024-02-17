@@ -1,3 +1,19 @@
+# Use of ChatGPT with external tools
+Compensate for the weaknesses of the model ChatGPT by feeding it the outputs of other tools. 
+For example, 
+
+1. A text retrieval system (sometimes called RAG or retrieval augmented generation) 
+   can tell the model about relevant documents. 
+
+2. A model like replicate to work out the pixels math.
+
+3. 
+
+4. Convex stores the messages and
+runs server-side functions to interact with OpenAI.
+
+
+
 # ChatGPT Convex demo
 
 This example app demonstrates how to use the
@@ -8,7 +24,7 @@ runs server-side functions to interact with OpenAI.
 ![Example](./example.png)
 
 Features:
-- You can chat and get responses from the Chat GPT api.
+- You can chat and get responses from the RoboChat GPT api.
 - You can start new threads to reset your conversation with Chat GPT.
 - You can specify what the chat identity is, and change it mid-thread.
 - You can make new identities.
