@@ -10,7 +10,6 @@
 // import ActiveSlider from "../sliders/ActiveSlider";
 import MySwiper from "../sliders/swiper/mySwiper";
 
-// import Stackedlist from "../sliders/swiper/mySwiper.tsx";
 import { useState } from "react";
 import { HiOutlineClipboardDocument } from "react-icons/hi2";
 export default function HeroSection() {

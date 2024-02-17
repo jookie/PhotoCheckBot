@@ -52,7 +52,7 @@ export default function Carousel() {
       </div>
 
       <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
-        {slides.map((s, i) => {
+        {slides.map((_s, i) => {
           return (
             <div
               onClick={() => {
