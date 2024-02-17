@@ -25,7 +25,7 @@ export default function HeroSection() {
   };
   return (
     <main>
-      {/* <MySwiper /> */}
+      {<MySwiper />}
       <div className="flex flex-col items-center justify-center text-center sm:mt-2 mt-1 flex-1 px-5 w-full">
         {/* <div className="flex py-28"> */}
         {/* </div> */}
