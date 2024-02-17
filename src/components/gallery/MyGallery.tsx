@@ -10,37 +10,37 @@
 // Display Selected Images: Render the selected images in the gallery format using a suitable React component such as react-grid-gallery or custom CSS styles.
 
 // Style Your Gallery: Apply CSS styles to enhance the appearance of the image gallery and ensure a responsive layout.
-import React, { useState } from 'react';
-import Dropzone from 'react-dropzone';
-import Gallery from 'react-grid-gallery';
+// import React, { useState } from 'react';
+// import Dropzone from 'react-dropzone';
+// import Gallery from 'react-grid-gallery';
 
-const MyGallery: React.FC = () => {
-  const [images, setImages] = useState<any[]>([]);
+// const MyGallery: React.FC = () => {
+//   const [images, setImages] = useState<any[]>([]);
 
-  const handleImageUpload = (acceptedFiles: File[]) => {
-    const newImages = acceptedFiles.map(file => ({
-      src: URL.createObjectURL(file),
-      thumbnail: URL.createObjectURL(file),
-      thumbnailWidth: 320,
-      thumbnailHeight: 212,
-    }));
-    setImages(prevImages => [...prevImages, ...newImages]);
-  };
+//   const handleImageUpload = (acceptedFiles: File[]) => {
+//     const newImages = acceptedFiles.map(file => ({
+//       src: URL.createObjectURL(file),
+//       thumbnail: URL.createObjectURL(file),
+//       thumbnailWidth: 320,
+//       thumbnailHeight: 212,
+//     }));
+//     setImages(prevImages => [...prevImages, ...newImages]);
+//   };
 
-  return (
-    <div>
-      <h2>My Gallery</h2>
-      <Dropzone onDrop={handleImageUpload} accept="image/*" multiple>
-        {({ getRootProps, getInputProps }) => (
-          <div {...getRootProps()}>
-            <input {...getInputProps()} />
-            <p>Drag & drop some files here, or click to select files</p>
-          </div>
-        )}
-      </Dropzone>
-      <Gallery images={images} />
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <h2>My Gallery</h2>
+//       <Dropzone onDrop={handleImageUpload} accept="image/*" multiple>
+//         {({ getRootProps, getInputProps }) => (
+//           <div {...getRootProps()}>
+//             <input {...getInputProps()} />
+//             <p>Drag & drop some files here, or click to select files</p>
+//           </div>
+//         )}
+//       </Dropzone>
+//       <Gallery images={images} />
+//     </div>
+//   );
+// };
 
-export default MyGallery;
+// export default MyGallery;
