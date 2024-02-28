@@ -73,7 +73,7 @@ export default function HeroSection() {
           <button
             className="px-4 py-2 text-white bg-[#5a5cd1] rounded-md hover:bg-[#3f4194] focus:outline-none focus:ring"
             onClick={() => {
-              window.location.href = "https://captionai-seven.vercel.app/";
+              window.location.href = "https://captionai-7ed8vherv-dovpeles.vercel.app/";
             }}
           >
             Scan Social Media on line in real time

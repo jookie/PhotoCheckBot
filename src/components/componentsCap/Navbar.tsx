@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link  from "next/link";
 import { AiOutlineGithub } from "react-icons/ai";
 
 export default function Navbar() {
@@ -10,8 +10,8 @@ export default function Navbar() {
           alt="header text"
           src="/logo.png"
           className="sm:w-14 sm:h-14 w-9 h-9"
-          width={36}
-          height={36}
+          width  = {36}
+          height = {36}
         />
         <h1 className="sm:text-5xl text-3xl font-bold ml-2 tracking-tight text-white hover:text-white/50">
           Image caption
