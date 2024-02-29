@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ReactDOM from "react-dom/client";
+
 import Home from "./page";
 import "./input.css";
 import "./index.css";
