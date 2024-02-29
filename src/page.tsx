@@ -5,7 +5,7 @@ import { AddIdentity } from "./components/AddIdentity";
 import { Thread, UIMessage } from "./components/Thread";
 import { Id } from "../convex/_generated/dataModel";
 
-export default function App() {
+export default function Home() {
   const { loadMore, results, status } = usePaginatedQuery(
     api.messages.list,
     {},

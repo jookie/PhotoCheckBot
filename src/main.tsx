@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import Home from "./page";
 import "./input.css"
 import "./index.css";
 // import "./styles/globals.css"
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       {/* <Navbar /> */}
       {/* <ActiveSlider/> */}
       <HeroSection />
-      <App />
+      <Home />
       {<Footer /> }
       {/* </ChakraProvider> */}
     </ConvexProvider>

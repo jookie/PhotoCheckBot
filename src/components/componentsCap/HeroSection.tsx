@@ -1,5 +1,5 @@
 // import Link from "next/link";
-// import Image from "next/image";
+
 // https://tailwindui.com/components#pricing
 // https://github.com/webdevcody/convex-replicate/tree/main 
 
